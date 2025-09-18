@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>桜羽うさ | ポートフォリオ</title>
+  <meta name="description" content="かわいいを求める全ての人に、作品を届けたい。Sakuraba Usaのイラスト・3D作品を掲載しているポートフォリオ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <!-- canonical（検索用） -->
+  <link rel="canonical" href="https://notomiya0222-spec.github.io/portfolio/">
+
+  <!-- OGP -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sakuraba Usa - Portfolio">
+  <meta property="og:title" content="Sakuraba Usa - Portfolio">
+  <meta property="og:description" content="かわいいを求める全ての人に、作品を届けたい。">
+  <meta property="og:url" content="https://notomiya0222-spec.github.io/portfolio/">
+  <meta property="og:image" content="https://notomiya0222-spec.github.io/portfolio/images/OGP.png?v=2">
+  <meta property="og:image:secure_url" content="https://notomiya0222-spec.github.io/portfolio/images/OGP.png?v=2">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ja_JP">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sakuraba Usa - Portfolio">
+  <meta name="twitter:description" content="かわいいを求める全ての人に、作品を届けたい。">
+  <meta name="twitter:image" content="https://notomiya0222-spec.github.io/portfolio/images/OGP.png?v=2">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#top" class="brand">
+      <svg viewBox="0 0 64 64" class="logo" aria-hidden="true">
+        <defs>
+          <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stop-color="#fecdd3" />
+            <stop offset="100%" stop-color="#fda4af" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#g)" d="M32 6c2 6 6 12 10 16s10 6 16 8c-6 2-12 4-16 8s-8 10-10 16c-2-6-6-12-10-16S12 32 6 30c6-2 12-4 16-8S30 12 32 6z"/>
+      </svg>
+      <span class="brand-name">Sakuraba Usa</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="petals" aria-hidden="true"></div>
+      <div class="hero-inner content">
+        <span class="chip">Portfolio / 3D・Illustration</span>
+        <h1>かわいいを求める全ての人に、<br class="br-md"/>作品を届けたい。</h1>
+        <p>イラストと3Dモデリングを中心に、セルルックな作品を制作・販売しています。配信活動や日常生活など、ご要望の際は是非お申し付けください。</p>
+        <div class="cta-row">
+          <a href="#works" class="btn primary">作品を見る →</a>
+          <a href="https://usakuraba.booth.pm/" target="_blank" rel="noopener" class="btn ghost">BOOTH</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about content">
+      <div class="about-grid">
+        <div>
+          <h2>About</h2>
+          <p>イラストを中心に、3Dモデリングの制作も行うマルチクリエイター。かわいらしいアニメ調や元気なカートゥーン調を得意としています。</p>
+          <p>また、Vtuberとしての動画投稿・配信活動を画策中です。</p>
+          <ul class="about-tags">
+            <li>Blender / Unity / VRChat</li>
+            <li>Clip Studio Paint</li>
+            <li>セルルック・トゥーン表現</li>
+            <li>BOOTH / Skima で出品中</li>
+          </ul>
+        </div>
+        <div class="profile">
+          <img src="./images/Vkatu_cut.png" alt="Profile Image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works content">
+      <h2>Works</h2>
+      <p class="muted">選択すると、一覧が表示されます</p>
+
+      <!-- Category Cards -->
+      <div id="works-home" class="cat-cards">
+        <button class="cat-card" data-kind="Illustration">
+          <div class="cat-thumb" style="background-image:url('./images/ロゴデザイン.png')"></div>
+          <div class="cat-body">
+            <div class="cat-title">イラスト</div>
+            <div class="cat-sub">Illustration</div>
+          </div>
+        </button>
+        <button class="cat-card" data-kind="3D">
+          <div class="cat-thumb" style="background-image:url('./images/boothサムネイル1.png')"></div>
+          <div class="cat-body">
+            <div class="cat-title">3Dモデル</div>
+            <div class="cat-sub">3D Models</div>
+          </div>
+        </button>
+      </div>
+
+      <!-- Listing -->
+      <div id="works-list" class="hidden">
+        <div class="list-top">
+          <button id="backBtn" class="btn tiny">← もどる</button>
+          <div class="tabs">
+            <button class="tab" data-kind="Illustration">Illustration</button>
+            <button class="tab" data-kind="3D">3D Models</button>
+          </div>
+        </div>
+        <div id="grid" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact content">
+      <h2>Contact</h2>
+      <p class="muted">ご依頼・お問い合わせは SNS またはメールからどうぞ。</p>
+      <div class="contact-grid">
+        <a class="contact-item" target="_blank" rel="noopener" href="https://x.com/Sakuraba_Usa">
+          <span>X (Twitter)</span> <span class="arrow">↗</span>
+        </a>
+        <a class="contact-item" target="_blank" rel="noopener" href="https://usakuraba.booth.pm/">
+          <span>BOOTH</span> <span class="arrow">↗</span>
+        </a>
+        <a class="contact-item" target="_blank" rel="noopener" href="https://www.youtube.com/@Sakuraba_Usa">
+          <span>YouTube</span> <span class="arrow">↗</span>
+        </a>
+        <a class="contact-item" target="_blank" rel="noopener" href="https://skima.jp/profile?id=480552">
+          <span>Skima</span> <span class="arrow">↗</span>
+        </a>
+
+        <button class="contact-item" id="copyEmail">
+          <div>
+            <div>Gmail をコピー</div>
+            <div class="mini muted">usausakuraba@gmail.com</div>
+          </div>
+          <span class="arrow" id="emailState">📋</span>
+        </button>
+
+        <button class="contact-item" id="copyTikTok">
+          <div>
+            <div>TikTok アカウントをコピー</div>
+            <div class="mini muted">@sakuraba_usa</div>
+          </div>
+          <span class="arrow" id="tiktokState">📋</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Sakuraba Usa</div>
+    <div class="muted">Delivering “Kawaii” to everyone 🌸</div>
+  </footer>
+
+  <!-- Modal (detail) -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button id="modalClose" class="modal-close" aria-label="閉じる">×</button>
+      <div class="modal-media">
+        <img id="modalImg" alt="work image" />
+      </div>
+      <div class="modal-body">
+        <h3 id="modalTitle" class="modal-title"></h3>
+        <div id="modalMeta" class="modal-meta"></div>
+        <p id="modalDesc" class="modal-desc"></p>
+        <a id="modalLink" class="btn primary hidden" target="_blank" rel="noopener">作品ページへ ↗</a>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
